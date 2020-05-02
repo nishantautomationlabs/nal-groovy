@@ -48,3 +48,15 @@ println "Any: " + myList.any() { item -> item % 2 == 0}  //returns true if there
 println "Every: " + myList.every() { item -> item > 0}  //returns true if all the elements matches the condition
 println "Collect: " + myList.collect { item -> item * 2}
 println "--------------------------------------------------------------------------------------"
+
+def numList = 1..8
+def evenNoClosure = { num -> return (num % 2 == 0)}
+def evenNums = filterMethod(numList, evenNoClosure)  //pass closure as an argument
+println "Even Nos: " + evenNums
+
+
+static def filterMethod(list, closure) {
+    return list.findAll(closure)
+}
+
+println "--------------------------------------------------------------------------------------"

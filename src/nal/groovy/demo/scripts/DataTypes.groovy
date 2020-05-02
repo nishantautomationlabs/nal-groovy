@@ -5,12 +5,12 @@ println "Data Types In Groovy Demo"
 //byte
 byte b = 100
 println b
-println "Class: " + b.getClass().getName() + " Min Value: " + Byte.MIN_VALUE + " Max Value: " + Byte.MAX_VALUE
+println "Class: $b.class Min Value: " + Byte.MIN_VALUE + " Max Value: " + Byte.MAX_VALUE
 println "--------------------------------------------------------------------------------------"
 //short
 short s = 32000
 println s
-println "Class: " + s.getClass().getName() + " Min Value: " + Short.MIN_VALUE + " Max Value: " + Short.MAX_VALUE
+println "Class: $s.class Min Value: " + Short.MIN_VALUE + " Max Value: " + Short.MAX_VALUE
 println "--------------------------------------------------------------------------------------"
 //int
 int i = 2140000000

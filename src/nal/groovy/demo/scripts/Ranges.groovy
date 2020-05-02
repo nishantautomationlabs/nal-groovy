@@ -28,3 +28,10 @@ newRange.each {i ->
 println "Get Class: " + range.getClass()
 println "Is instance of java.util.List: " +  range instanceof java.util.List
 println "--------------------------------------------------------------------------------------"
+
+def str = "This is a test statement"
+println str[0..3]
+println str[3..0]   //in reverse order
+println str[0..-5]  //from 0 to 5th last element from end
+
+println "--------------------------------------------------------------------------------------"
