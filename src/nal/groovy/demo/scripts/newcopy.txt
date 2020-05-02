@@ -1,0 +1,2 @@
+This will also overwrite old content
+This text will be appended to the existing text in the file
